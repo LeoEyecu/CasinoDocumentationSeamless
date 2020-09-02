@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: 1 - Presentation
+  version: '1.0'
+  description: |-
+    EyeCu.Digital Games system offer 2 kind of API.
+
+    - A regular one : We manage for you, your users, balances etc on **OUR** system
+
+    - A Seamless API : You manage by yourself your user database, the balance of your user on **YOUR** system - [Click here to see the documentation of the seamless](https://eyecu.stoplight.io/docs/casinodocumentationseamless/reference/1-Seamless.v1.yaml)
+  contact:
+    name: Eyecu.Digital
+servers:
+  - url: 'https://games.eyecu.digital'
+    description: EyeCu.Digital Game Server
+paths: {}
+components:
+  schemas: {}

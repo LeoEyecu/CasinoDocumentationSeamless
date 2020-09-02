@@ -202,7 +202,7 @@ paths:
                   value:
                     error: Invalid credentials.
       operationId: post-api-login
-      description: Authentication of a user in a Shop
+      description: To communicate with our API, you should login as a user to proof your identity. You can use the Admin User given by us.
       requestBody:
         content:
           application/x-www-form-urlencoded:

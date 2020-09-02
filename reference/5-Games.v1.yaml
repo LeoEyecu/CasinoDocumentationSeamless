@@ -173,7 +173,7 @@ paths:
         - Global data
   /api/login:
     post:
-      summary: 1 - Data access authentication
+      summary: Data access authentication
       responses:
         '200':
           description: Login success

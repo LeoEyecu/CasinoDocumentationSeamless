@@ -171,61 +171,6 @@ paths:
         - JWT Token: []
       tags:
         - Global data
-  '/launcher/{game}/{token}/{mode}':
-    parameters:
-      - schema:
-          type: string
-          example: CorridaRomanceWD
-        name: game
-        in: path
-        required: true
-        description: Game name
-      - schema:
-          type: string
-          example: Hf4h08gf87e8z70ef8zf7ze89f
-        name: token
-        in: path
-        required: true
-        description: User token (JWT / Seamless token)
-      - schema:
-          type: string
-          example: desktop
-        name: mode
-        in: path
-        required: true
-        description: Game mode (desktop or mobile)
-    get:
-      summary: Start a game session for the user
-      tags:
-        - Game session
-      responses:
-        '307':
-          description: |-
-            Temporary Redirect
-
-            Redirect automaticly to the game
-      operationId: get-launcher-game-token-mode
-      description: |-
-        This is not an API endpoint ! You should redirect the user (or serve it in an iframe) using this syntax.
-
-        https://games.eyecu.digital/launcher/{game}/{token}/{mode}
-
-        Games name = from /api/games => use the 'name' property of the game (not the title)
-
-        Token = From /api/login or if you want to use seamless, check the seamless part for token generation
-
-        Mode = desktop or mobile
-
-        ### /!\ Information for the lobby url /!\
-        You can add the lobby url with : ?lobby_url={lobby_url} at the end
-
-        For exemple :
-
-        /launcher/NarcosNET/JWT_TOKEN/desktop?lobby_url=https://www.google.com (You need to write the full url with https://, http://)
-
-        If you don't provide the lobby url, it will take by default the lobby_url enter in your shop admin configuration (default lobby url).
-
-        If you pass the lobby url in the api when you start a game, it will prioritize it.
 components:
   schemas: {}
   securitySchemes:
@@ -235,4 +180,3 @@ components:
       description: Provided by /api/login
 tags:
   - name: Global data
-  - name: Game session

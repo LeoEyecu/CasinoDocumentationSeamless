@@ -154,6 +154,17 @@ paths:
         Get list of games available
 
         This is the list of the available games : https://docs.google.com/spreadsheets/d/11AmYOKU3cY6sVo1hsboj-xVf-1ig2hqNugeDa_yHC6I/edit#gid=0
+        
+        If you want to use our CDN for the games picture, this is the method : 
+        
+        http://eyecu-games-pictures.b-cdn.net/games/{GAME_NAME}.jpg
+        
+        (Ex : http://eyecu-games-pictures.b-cdn.net/games/AdmiralNelsonAM.jpg)
+        
+        For the device property : 
+           - 0 => Mobile only
+           - 1 => Desktop only
+           - 2 => Mobile + Desktop
       parameters:
         - schema:
             type: string

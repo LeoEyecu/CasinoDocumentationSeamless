@@ -157,9 +157,9 @@ paths:
         
         If you want to use our CDN for the games picture, this is the method : 
         
-        http://eyecu-games-pictures.b-cdn.net/games/{GAME_NAME}.jpg
+        https://eyecu-games-pictures.b-cdn.net/games/{GAME_NAME}.jpg
         
-        (Ex : http://eyecu-games-pictures.b-cdn.net/games/AdmiralNelsonAM.jpg)
+        (Ex : https://eyecu-games-pictures.b-cdn.net/games/AdmiralNelsonAM.jpg)
         
         For the device property : 
            - 0 => Mobile only

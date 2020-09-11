@@ -10,6 +10,8 @@ info:
     In this article we will see how the seamless flow is working.
 
     You will have to give us an endpoint from your system (GET Endpoint). This endpoint need to be always available, otherwise the games will not work.
+    
+    * If you need / or you have any other requirement in the endpoint format (arguments etc) please contact the support ( https://eyecu.digital/support/ )
 
     Let's take an example, as your endpoint will be : https://www.casino.pro/seamless
 
@@ -156,6 +158,8 @@ paths:
         Request example to your seamless api :
 
         https://www.casino.pro/seamless?shop_id=1&user_id=1&event=getBalance&request_time=1598347737744
+        
+        * If you need / or you have any other requirement in the endpoint format (arguments etc) please contact the support ( https://eyecu.digital/support/ )
 
         | Param |      Description |
         | ------------- | :-----------: | -----: |
@@ -199,6 +203,8 @@ paths:
         Request example to your seamless api :
 
         https://www.casino.pro/seamless?shop_id=1&user_id=1&event=updateBalance&request_time=1598347737744&balance=125.25
+        
+        * If you need / or you have any other requirement in the endpoint format (arguments etc) please contact the support ( https://eyecu.digital/support/ )
 
         | Param |      Description |
         | ------------- | :-----------: | -----: |
@@ -234,6 +240,8 @@ paths:
         Request example to your seamless api :
 
         https://www.casino.pro/seamless?shop_id=1&user_id=1&event=gameStats&request_time=1598347737744&ip=0.0.0.0&game_id=25
+        
+        * If you need / or you have any other requirement in the endpoint format (arguments etc) please contact the support ( https://eyecu.digital/support/ )
 
         | Param |      Description |
         | ------------- | :-----------: | -----: |
@@ -263,6 +271,8 @@ paths:
         Request example to your seamless api :
 
         https://www.casino.pro/seamless?shop_id=1&user_id=1&event=updateJackpot&request_time=1598347737744&balance=125.5&win=10&game=LuckyKenoPP%20JPG%201
+        
+        * If you need / or you have any other requirement in the endpoint format (arguments etc) please contact the support ( https://eyecu.digital/support/ )
 
         | Param |      Description |
         | ------------- | :-----------: | -----: |

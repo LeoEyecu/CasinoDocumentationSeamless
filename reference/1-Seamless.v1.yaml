@@ -22,13 +22,19 @@ info:
 
     | Event Name |      Require answer |   Description |
     | ------------- | :-----------: | -----: |
-    | getBalance      | YES | Retrive the balance of the user |
-    | updateBalance      |   NO |   Update the balance of the user |
-    | gameStats |   NO    |   Send a round statistic (bet, win, profit etc) |
-    | gameLog |   NO    |   Send a log of the game played (game id, user id, ip etc) |
-    | jackpotUpdate |   NO    |  Send a jackpot update for the player |
-    | gameError |   NO    |   Send an error log if the game have any problem |
+    | getBalance      | **YES** | Retrive the balance of the user |
+    | updateBalance      |   DEFAULT_ANSWER |   Update the balance of the user |
+    | gameStats |   DEFAULT_ANSWER    |   Send a round statistic (bet, win, profit etc) |
+    | gameLog |   DEFAULT_ANSWER    |   Send a log of the game played (game id, user id, ip etc) |
+    | jackpotUpdate |   DEFAULT_ANSWER    |  Send a jackpot update for the player |
+    | gameError |   DEFAULT_ANSWER    |   Send an error log if the game have any problem |
+    | apiError |   NO    |   Send an error log if your API facing any problem |
 
+    Require answer :
+    - YES : You should answer with the structure describe in the event description
+    - DEFAULT_ANSWER : You should answer {'success': true}, else if the event 'apiError' will be trigger
+    - NO : No answer required
+  
     ### Generate a Seamless token
 
     To generate a valid user Token, you will have to provide 2 things :

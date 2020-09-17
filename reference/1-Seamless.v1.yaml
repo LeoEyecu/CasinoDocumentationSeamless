@@ -110,7 +110,9 @@ paths:
             Redirect automaticly to the game
       operationId: get-launcher-game-token-mode
       description: |-
-        This is not an API endpoint ! You should redirect the user (or serve it in an iframe) using this syntax.
+        This is not an API endpoint ! You should redirect the user using this syntax.
+        
+        /!\ Due to security reason Iframe is not support with Google Chrome ! /!\
 
         https://games.eyecu.digital/launcher/{game}/s:{shop_id}@{token}/{mode}
 

@@ -298,6 +298,31 @@ paths:
       responses: {}
       operationId: get-event-gameError
       description: "<!-- theme: info -->\n> #### This is not an endpoint\n\nThis event is usefull if you want to know if a game have any error\n\nRequest example to your seamless api :\n\nhttps://www.casino.pro/seamless?shop_id=1&user_id=1&event=updateJackpot&request_time=1598347737744&responseEvent=error&responseType=ERROR&serverResponse=InternalError\n\n\n| Param |      Description |\n| ------------- | :-----------: | -----: |\n| shop_id | Your Shop ID |\n| user_id |  Your User ID |\n| event |  **gameError** |\n| request_time |  UNIX Timestamp (ms) when the request has been sent |\n| responseEvent | \t\"error\" |\n| responseType | **Error description** |\n| serverResponse | \"InternalError\" |\n\nThis request don't need any answer\n\n<!-- theme: info -->\n> #### responseEvent will be always \"error\" & serverResponse will be always \"InternalError\""
+  /event/apiError:
+    get:
+      summary: apiError
+      tags:
+        - Events
+      responses: {}
+      operationId: get-event-apiError
+      description: |-
+        <!-- theme: info -->
+        > #### This is not an endpoint
+
+        This event is usefull if you want to know if your api have any error in all the event
+
+        Everytime our system talk with your system, it require an answer. 
+        For all the events (excepted : getBalance) you should answer : {'success': true}
+        
+        If our system can't get this response or it get {'success': false}, this event (apiError) will be triggered.
+
+        | Param |      Description |
+        | ------------- | :-----------: | -----: |
+        | shop_id | Your Shop ID |
+        | user_id |  Your User ID |
+        | event |  **apiError** |
+        | error |  The error description |
+
 components:
   schemas: {}
 tags:
